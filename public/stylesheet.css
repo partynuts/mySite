@@ -56,10 +56,21 @@ header {
 
 .huhu {
   /* top: 700px; */
-  height: 500px;
+  height: 300px;
   width: 100%;
   background-color: white;
   position: relative;
+  margin: 50px 0;
+}
+
+.super {
+  /* top: 700px; */
+  height: 500px;
+  width: 100%;
+  background-color: pink;
+  position: relative;
+  margin: 50px 0;
+
 }
 
 footer {
