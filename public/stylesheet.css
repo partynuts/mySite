@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  background-image: url("/graduation.jpg");
+  background-image: url("/origamib.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -16,69 +16,163 @@ header {
   width: 100%;
   position: fixed;
   z-index: 2;
+  top: 0;
   grid-template-columns: 30% 70%;
-  padding: 0% 1%;
+  /* padding: 0% 1%; */
   align-items: center;
-  font-size: 20px;
-  border: solid 1px;
-  background: white;
+  /* font-size: 20px; */
+  background-color: white;
+  font-family: 'Slabo 27px', serif;
 }
 
 .name {
   grid-column: 1;
+  color: black;
+  font-size: 20px;
+  margin-left: 2%;
+  font-weight: bold;
 }
 
 .menu {
   width: 100%;
   grid-column: 2;
   justify-self: end;
-  /* border: solid red 1px; */
+  font-size: 18px;
+  margin-right: 1%;
 }
 
 .menuItem {
   display: inline-block;
-  border-right: solid 1px;
+  /* border-right: solid 1px; */
   float: right;
-  padding: 0 2%;
+  padding: 0 0.5%;
+  color: purple;
 }
 
 .main {
   width: 100%;
   height: 100%;
-  /* background: url("graduation.jpg"); */
+  /* font-family: 'Lato', sans-serif; */
+  font-family: 'Slabo 27px', serif;
 }
 
+h2 {
+  text-decoration: underline;
+}
+
+/*
 .leer {
   position: relative;
   height: 500px;
   opacity: 0;
+} */
+
+.active {
+  background: pink;
+  /* font-weight: bold; */
+  transition: 500ms;
 }
 
-.huhu {
-  /* top: 700px; */
-  height: 300px;
-  width: 100%;
-  background-color: white;
-  position: relative;
-  margin: 50px 0;
+.menuItem:hover {
+font-weight: bold;
 }
 
-.super {
-  /* top: 700px; */
-  height: 500px;
-  width: 100%;
-  background-color: pink;
+.project {
+  height: auto;
+  max-width: 100%;
+  /* background-color: rgba(0, 18, 79, 0.95); */
+  /* color: white; */
+  background-color: rgba(255, 255, 255, 0.9);
   position: relative;
-  margin: 50px 0;
+  padding: 3% 3%;
+  margin: 100px 0;
+}
 
+.story {
+  height: 275px;
+  max-width: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  position: relative;
+  margin: 100px 0;
+  text-align: justify;
+  padding: 3% 3%;
+  /* font-weight: bold; */
+}
+
+.contact {
+  height: 275px;
+  max-width: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  position: relative;
+  margin: 100px 0;
+  text-align: justify;
+  padding: 3% 3%;
+  /* font-weight: bold; */
+}
+
+.skills {
+  height: auto;
+  max-width: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  position: relative;
+  margin: 100px 0;
+  text-align: justify;
+  padding: 3% 3%;
+  /* font-weight: bold; */
+}
+
+.skillIcons {
+  display: inline-block;
+  margin: 2% 3%;
+
+}
+
+.logos {
+  max-width: 20vw;
+height: 13vh;
 }
 
 footer {
   /* position: absolute; */
   bottom: 0;
-  padding: 1% 3%;
-  width: 100%;
-  height: 30px;
+  padding: 1% 1%;
+  /* width: 100%; */
+  height: 10%;
   /* Height of the footer */
-  background: #6cf;
+  background-color: white;
+  display: grid;
+    grid-template-columns: 30% 70%;
+}
+
+.copyright {
+  grid-column: 1;
+}
+
+.socialMedia {
+  display: inline-block;
+  grid-column: 2;
+  justify-self: end;
+  display: flex;
+}
+
+.sm {
+  font-size: 1.5em;
+  width: 50px;
+  /* margin-right: 5px; */
+}
+
+ a.linkedIn:link,  a.linkedIn:active, a.linkedIn:visited, a.linkedIn:hover {
+color: #0077b5;
+}
+
+a.xing:link,  a.xing:active, a.xing:visited, a.xing:hover {
+color: #007575;
+}
+
+a.github:link,  a.github:active, a.github:visited, a.github:hover {
+color: black;
+}
+
+a.linkedIn:hover, a.xing:hover, a.github:hover{
+  font-size: 1.6em;
 }
