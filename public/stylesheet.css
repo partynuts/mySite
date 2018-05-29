@@ -89,7 +89,7 @@ font-weight: bold;
 }
 
 .story {
-  height: 275px;
+  height: auto;
   max-width: 100%;
   background-color: rgba(255, 255, 255, 0.9);
   position: relative;
@@ -97,6 +97,51 @@ font-weight: bold;
   text-align: justify;
   padding: 3% 3%;
   /* font-weight: bold; */
+}
+
+.cvWrapper {
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 1.5% 0;
+  width: 111px;
+}
+
+.cvLink {
+  /* display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 1.5% 0; */
+  /* width: 111px; */
+}
+
+#german {
+  display: inline-block;
+  background-image:linear-gradient(to right,black,black,red,gold, gold);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /* -webkit-text-stroke:0.05px black; */
+
+}
+
+#english {
+  background-image:linear-gradient(to right,blue,red,white);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke:0.1px blue;
+
+}
+
+.cv {
+  height: 10vh;
+
+}
+
+.cv:hover {
+box-shadow: 5px 5px 5px #888888;
+height: 11vh;
 }
 
 .contact {
@@ -129,8 +174,96 @@ font-weight: bold;
 
 .logos {
   max-width: 20vw;
-height: 13vh;
+height: 10vh;
 }
+
+.projectWrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.projectPic {
+  grid-column: 1;
+  max-width: 50%;
+}
+
+.projImg {
+  max-width: 100%;
+  height: auto;
+}
+
+.projectInfo {
+  grid-column: 2;
+align-self: center;
+justify-self: start;
+font-size: 20px;
+}
+
+
+#projContainer1 {
+  position: relative;
+  margin: 10px auto;
+  width: 450px;
+  height: 281px;
+  z-index: 1;
+  perspective: 1000;
+
+}
+
+#projContainer2 {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: all 1.0s linear;
+}
+#projContainer1:hover #projContainer2 {
+  transform: rotateY(180deg);
+  box-shadow: -5px 5px 5px #aaa;
+  cursor: pointer;
+}
+
+.face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+.face.back {
+  display: block;
+  transform: rotateY(180deg);
+  box-sizing: border-box;
+  padding: 10px;
+  color: white;
+  text-align: center;
+  /* background-color: #aaa; */
+  background-color: #3191C3;
+}
+
+.watchDemo:hover {
+  cursor: pointer;
+}
+
+.video {
+  display: none;
+  width: 90vw;
+  height: 90vh;
+  z-index: 50;
+  left: 5%;
+  /* top: 2%; */
+  background-color: rgba(105, 83, 121, 0.9);
+  position: absolute;
+  border: solid 2px;
+    justify-content: center;
+    align-content: center;
+    cursor: pointer;
+}
+
+video {
+  width: 700px;
+   height: 500px;
+   align-self: center;
+}
+
 
 footer {
   /* position: absolute; */
