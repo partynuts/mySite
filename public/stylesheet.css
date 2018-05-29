@@ -354,8 +354,8 @@ a.mail:hover {
     color: #660066;
 }
 
-/* a.linkedIn:hover,
-a.xing:hover,
-a.github:hover {
+a.linkedIn.footer:hover,
+a.xing.footer:hover,
+a.github.footer:hover {
     font-size: 1.6em;
-} */
+}
