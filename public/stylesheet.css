@@ -31,6 +31,20 @@ header {
     font-size: 20px;
     margin-left: 2%;
     font-weight: bold;
+    /* vertical-align: center: */
+}
+
+#myPic {
+    /* display: inline-block; */
+    width: 300px;
+    height: auto;
+    /* position: absolute; */
+    /* float: right; */
+}
+
+.cvPicContainer {
+    display: flex;
+    justify-content: space-between;
 }
 
 .menu {
@@ -100,6 +114,7 @@ h2 {
     margin-top: 200px;
     text-align: justify;
     padding: 3% 3%;
+    /* background: url("./imgs/ich.png") no-repeat right rgba(255, 255, 255, 0.9); */
     /* font-weight: bold; */
 }
 
@@ -150,7 +165,7 @@ h2 {
     max-width: 100%;
     background-color: rgba(255, 255, 255, 0.9);
     position: relative;
-    /* margin: 100px 0; */
+    margin-bottom: 200px;
     text-align: justify;
     padding: 3% 3%;
     /* font-weight: bold; */
