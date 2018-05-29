@@ -82,8 +82,8 @@ h2 {
 } */
 
 .active {
-    background: pink;
-    /* font-weight: bold; */
+    /* background: pink; */
+    font-weight: bold;
     transition: 500ms;
 }
 
@@ -256,8 +256,24 @@ h2 {
     padding: 10px;
     color: white;
     text-align: center;
+    /* vertical-align: center; */
     /* background-color: #aaa; */
     background-color: #3191C3;
+}
+
+.backsideProjectPic {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.projectText {
+    height: auto;
+    line-height: 30px;
+    /* text-align: justify; */
+    font-size: fit-height;
+    align-self: center;
+    /* vertical-align: center; */
 }
 
 .watchDemo {
@@ -274,7 +290,7 @@ h2 {
     height: 90vh;
     z-index: 50;
     left: 5%;
-    background-color: rgba(105, 83, 121, 0.8);
+    background-color: rgba(105, 83, 121, 0.9);
     position: absolute;
     border: solid 2px;
     justify-content: center;
@@ -283,8 +299,8 @@ h2 {
 }
 
 video {
-    width: 700px;
-    height: 500px;
+    width: 70%;
+    height: auto;
     align-self: center;
 }
 

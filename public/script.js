@@ -87,7 +87,7 @@ $( "#connect4" ).on( "click", () => {
 	} );
 	$( "video" ).attr( "src", "./demos/connect4_demo.mp4" )
 	// demo.get().play();
-
+	$( "body" ).css( "overflow", "hidden" )
 } )
 
 $( ".video" ).on( "click", () => {
